@@ -6,7 +6,7 @@ dofile(modpath.."/blue_slime.lua")
 
 minetest.register_craftitem("terralibmt:gel_clump", {
 	description = ("Gel Clump"),
-	inventory_image = "terralibmt.png"
+	inventory_image = "terralibmt_gel_clump.png"
 })
 
 minetest.register_craft({
