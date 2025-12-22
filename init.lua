@@ -1,6 +1,7 @@
 -- Load files
 local modpath = minetest.get_modpath("terralibmt")
 
+dofile(modpath.."/beetles.lua")
 dofile(modpath.."/cave_roots.lua")
 dofile(modpath.."/green_slime.lua")
 dofile(modpath.."/blue_slime.lua")
