@@ -16,7 +16,7 @@ minetest.register_craftitem("terralibmt:cave_root_cooked", {
 	description = ("Roasted Cave Root"),
 	inventory_image = "terralibmt_cave_root_cooked.png",
 	groups = {food_cave_root = 1},
-	on_use = minetest.item_eat(1),
+	on_use = minetest.item_eat(2),
 })
 
 minetest.register_craft({
@@ -25,6 +25,26 @@ minetest.register_craft({
 	recipe = "terralibmt:cave_root",
 
 })
+
+minetest.register_ore({
+	ore_type        = "blob",
+	ore             = "default:dirt",
+	wherein         = {"default:stone"},
+	clust_scarcity  = 16 * 16 * 16,
+	clust_size      = 5,
+	y_max           = 31000,
+	y_min           = -256,
+	noise_threshold = 0.0,
+	noise_params    = {
+		offset = 0.5,
+		scale = 0.2,
+		spread = {x = 5, y = 5, z = 5},
+		seed = 23456,
+		octaves = 1,
+		persist = 0.0
+	},
+})
+
 
 minetest.register_ore({
 	ore_type        = "blob",
