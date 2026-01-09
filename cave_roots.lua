@@ -28,6 +28,25 @@ minetest.register_craft({
 
 minetest.register_ore({
 	ore_type        = "blob",
+	ore             = "terralibmt:mud",
+	wherein         = {"default:stone"},
+	clust_scarcity  = 20 * 20 * 20,
+	clust_size      = 4,
+	y_max           = 31000,
+	y_min           = -640,
+	noise_threshold = 0.0,
+	noise_params    = {
+		offset = 0.5,
+		scale = 0.2,
+		spread = {x = 5, y = 5, z = 5},
+		seed = 2345,
+		octaves = 1,
+		persist = 0.0
+	},
+})
+
+minetest.register_ore({
+	ore_type        = "blob",
 	ore             = "default:dirt",
 	wherein         = {"default:stone"},
 	clust_scarcity  = 16 * 16 * 16,

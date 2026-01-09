@@ -25,3 +25,23 @@ minetest.register_craft( {
 		{"", "default:obsidian", ""}
 	}
 })
+
+	minetest.register_decoration({
+		deco_type = "simple",
+		place_on = {"default:dry_dirt"},
+		sidelen = 4,
+		noise_params = {
+			offset = -1.5,
+			scale = -1.5,
+			spread = {x = 200, y = 200, z = 200},
+			seed = 330,
+			octaves = 4,
+			persist = 1.0
+		},
+		biomes = {"savanna"},
+		y_max = 31000,
+		y_min = 1,
+		decoration = "default:clay",
+		place_offset_y = -1,
+		flags = "force_placement",
+	})
