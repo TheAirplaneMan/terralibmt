@@ -32,7 +32,7 @@ mobs:register_mob("terralibmt:blue_slime", {
 mobs:spawn({
 	name = "terralibmt:blue_slime",
 	nodes = {"default:dirt_with_grass"},
-	active_object_count = 2,
+	active_object_count = 1,
         chance = 6000
 })
 

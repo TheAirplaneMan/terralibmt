@@ -7,15 +7,23 @@ dofile(modpath.."/fire_stone.lua")
 dofile(modpath.."/living_tree.lua")
 dofile(modpath.."/yellow_willow.lua")
 dofile(modpath.."/purple_sakura.lua")
-dofile(modpath.."/cockroach.lua")
 dofile(modpath.."/mud.lua")
 dofile(modpath.."/misc.lua")
 dofile(modpath.."/cave_roots.lua")
-dofile(modpath.."/green_slime.lua")
-dofile(modpath.."/blue_slime.lua")
-dofile(modpath.."/piranha.lua")
 dofile(modpath.."/heart_crystal.lua")
 dofile(modpath.."/life_fruit.lua")
+
+-- Mobs
+
+dofile(modpath.."/volcanite.lua")
+dofile(modpath.."/lava_eye.lua")
+dofile(modpath.."/flying_eye.lua")
+dofile(modpath.."/cockroach.lua")
+dofile(modpath.."/piranha.lua")
+dofile(modpath.."/black_slime.lua")
+dofile(modpath.."/yellow_slime.lua")
+dofile(modpath.."/blue_slime.lua")
+dofile(modpath.."/green_slime.lua")
 
 
 -- Mod Compatibility
@@ -39,6 +47,14 @@ minetest.register_craft({
 minetest.register_node("terralibmt:stone_rough", {
 	description = ("Rough Stone"),
 	tiles = {"terralibmt_stone_rough.png"},
+	groups = {cracky = 2, stone = 1},
+	drop = "default:cobble",
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("terralibmt:stone_bumpy", {
+	description = ("Bumpy Stone"),
+	tiles = {"terralibmt_stone_bumpy.png"},
 	groups = {cracky = 2, stone = 1},
 	drop = "default:cobble",
 	sounds = default.node_sound_stone_defaults(),
@@ -93,7 +109,7 @@ minetest.register_ore({
 
 minetest.register_ore({
 	ore_type        = "blob",
-	ore             = "terralibmt:stone_rough",
+	ore             = "terralibmt:stone_bumpy",
 	wherein         = {"default:stone"},
 	clust_scarcity  = 16 * 16 * 16,
 	clust_size      = 8,
