@@ -1,7 +1,7 @@
 minetest.register_node("terralibmt:heart_crystal", {
 	description = ("Heart Crystal"),
 	drawtype = "plantlike",
-	tiles = {"terralibmt_heart_crystal_placed.png"},
+	tiles = {"terralibmt_heart_crystal.png"},
 	inventory_image = "terralibmt_heart_crystal.png",
 	wield_image = "terralibmt_heart_crystal.png",
 	paramtype = "light",
@@ -38,7 +38,7 @@ minetest.register_decoration({
 	place_on = {"default:stone"},
 	sidelen = 16,
 
-	fill_ratio = 0.00025, -- rarity
+	fill_ratio = 0.00015, -- rarity
 
 	y_max = -64,   -- BELOW ground
 	y_min = -31000,

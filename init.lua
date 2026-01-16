@@ -1,6 +1,8 @@
 -- Load files
 local modpath = minetest.get_modpath("terralibmt")
 
+dofile(modpath.."/forest.lua")
+dofile(modpath.."/tools.lua")
 dofile(modpath.."/fungus.lua")
 dofile(modpath.."/gems.lua")
 dofile(modpath.."/fire_stone.lua")
@@ -11,11 +13,13 @@ dofile(modpath.."/mud.lua")
 dofile(modpath.."/misc.lua")
 dofile(modpath.."/cave_roots.lua")
 dofile(modpath.."/heart_crystal.lua")
+dofile(modpath.."/bubble_crystal.lua")
 dofile(modpath.."/life_fruit.lua")
 
 -- Mobs
 
 dofile(modpath.."/volcanite.lua")
+dofile(modpath.."/snail.lua")
 dofile(modpath.."/lava_eye.lua")
 dofile(modpath.."/flying_eye.lua")
 dofile(modpath.."/cockroach.lua")

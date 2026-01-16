@@ -34,5 +34,4 @@ minetest.register_node("terralibmt:fungus_yummy", {
 		y_max = 31000,
 		y_min = 2,
 		decoration = "terralibmt:fungus_yummy",
-		param2 = 4,
 	})

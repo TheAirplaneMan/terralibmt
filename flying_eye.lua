@@ -25,6 +25,7 @@ mobs:register_mob("terralibmt:flying_eye", {
 --		{name = "default:lava_source", chance = 3, min = 0, max = 2}
 --	},
 	lava_damage = 2,
+	light_damage = 3,
 })
 
 -- where to spawn
