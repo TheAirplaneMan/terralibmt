@@ -13,15 +13,15 @@ minetest.register_node("terralibmt:bubble_crystal", {
 		max_items = 1,
 		items = {
 			{
-				items = {"terralibmt:bubble_crystal_fragment 3"},
+				items = {"terralibmt:bubble_crystal_fragment 9"},
 				rarity = 3,
 			},
 			{
-				items = {"terralibmt:bubble_crystal_fragment 2"},
+				items = {"terralibmt:bubble_crystal_fragment 7"},
 				rarity = 2,
 			},
 			{
-				items = {"terralibmt:bubble_crystal_fragment"},
+				items = {"terralibmt:bubble_crystal_fragment 4"},
 			},
 		},
 	},

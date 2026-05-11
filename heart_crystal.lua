@@ -13,15 +13,15 @@ minetest.register_node("terralibmt:heart_crystal", {
 		max_items = 1,
 		items = {
 			{
-				items = {"terralibmt:heart_crystal_fragment 3"},
+				items = {"terralibmt:heart_crystal_fragment 9"},
 				rarity = 3,
 			},
 			{
-				items = {"terralibmt:heart_crystal_fragment 2"},
+				items = {"terralibmt:heart_crystal_fragment 7"},
 				rarity = 2,
 			},
 			{
-				items = {"terralibmt:heart_crystal_fragment"},
+				items = {"terralibmt:heart_crystal_fragment 4"},
 			},
 		},
 	},
@@ -38,7 +38,7 @@ minetest.register_decoration({
 	place_on = {"default:stone"},
 	sidelen = 16,
 
-	fill_ratio = 0.00015, -- rarity
+	fill_ratio = 0.00018, -- rarity
 
 	y_max = -64,   -- BELOW ground
 	y_min = -31000,

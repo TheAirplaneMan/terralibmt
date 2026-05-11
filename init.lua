@@ -1,9 +1,13 @@
 -- Load files
 local modpath = minetest.get_modpath("terralibmt")
 
+dofile(modpath.."/dirt_nodes.lua")
+dofile(modpath.."/wallpaper.lua")
 dofile(modpath.."/forest.lua")
 dofile(modpath.."/tools.lua")
 dofile(modpath.."/fungus.lua")
+dofile(modpath.."/sparkle.lua")
+dofile(modpath.."/tree_stuff.lua")
 dofile(modpath.."/gems.lua")
 dofile(modpath.."/fire_stone.lua")
 dofile(modpath.."/living_tree.lua")
@@ -28,6 +32,9 @@ dofile(modpath.."/black_slime.lua")
 dofile(modpath.."/yellow_slime.lua")
 dofile(modpath.."/blue_slime.lua")
 dofile(modpath.."/green_slime.lua")
+dofile(modpath.."/wraith.lua")
+
+
 
 
 -- Mod Compatibility
