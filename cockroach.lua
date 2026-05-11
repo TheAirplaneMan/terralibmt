@@ -61,7 +61,7 @@ minetest.register_craftitem(":mobs:bucket_milk", {
 	groups = {food_milk = 1, drink = 1}
 })
 
-mobs.add_eatable("mobs:bucket_milk", 8)
+--mobs.add_eatable("mobs:bucket_milk", 8)
 
 minetest.register_craftitem("terralibmt:cockroach_milk_crystals", {
 	description = ("Cockroach Milk Crystals"),
